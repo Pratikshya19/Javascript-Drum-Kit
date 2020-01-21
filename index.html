@@ -4,9 +4,46 @@
         <title>JavaScript Drum Kit</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
     </head>
-    <body>
-    
+   <body>
+
+<div data-key="65" class="key">
+    <kbd>A</kbd>
+</div>
+<div data-key="83" class="key">
+    <kbd>S</kbd>
+</div>
+<div data-key="68" class="key">
+    <kbd>D</kbd>
+</div>
+<div data-key="70" class="key">
+    <kbd>F</kbd>
+</div> 
+
+<audio data-key="65" src="sounds/boom.wav"></audio>
+<audio data-key="83" src="sounds/clap.wav"></audio>
+<audio data-key="68" src="sounds/hihat.wav"></audio>
+<audio data-key="70" src="sounds/kick.wav"></audio>
+
+
+
+<script>
+document.addEventListener('keydown', function(e) {
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
+    console.log(audio)
+    if (!audio) return;
+
+})
+
+
+
+// const keys = Array.from(document.querySelectorAll('.key'));
+//   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+//   window.addEventListener('keydown', playSound);
+
+</script>
+              
+
     </body>
 </html>
