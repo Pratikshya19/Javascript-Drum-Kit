@@ -17,28 +17,19 @@ background-size: cover;
     border-radius: .5rem;
     font-size: 2.0rem;
     padding: 1rem 0.5rem;
-/* 
-    transition: all .07s ease; */
+
 
   
     width: 10rem;
     text-align: center;
     color: white;
     background: white;
-    /* text-shadow: 0 0 .5rem black; */
+    
     margin: 3rem;
 
   }
 
 kbd {
-  /* display: block; */
   font-size: 5rem;
   color: black;
 }
-/* 
-.sound {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    color: #ffc600;
-  } */
