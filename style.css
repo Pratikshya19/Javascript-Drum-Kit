@@ -1,13 +1,20 @@
 html {
     background: url(image.jpeg) top center;
 background-size: cover;
-
+overflow: hidden;
 }
+.projectname {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 20px;
+  color: orchid;
+  font-family: 'Ruge Boogie', cursive;
+}
+
 
 .keys {
     display: flex;
-   
-    min-height: 100vh;
+    min-height: 90vh;
     
     justify-content: center;
   }
@@ -33,3 +40,4 @@ kbd {
   font-size: 5rem;
   color: black;
 }
+
