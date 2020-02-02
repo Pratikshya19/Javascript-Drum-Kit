@@ -59,7 +59,21 @@ key.classList.add('playing')
     if (!audio) return;
     audio.currentTime = 0;
     audio.play()
+    console.log(key.classList);
+    key.classList.add("playing");
+
+    
 })
+function removeTransiiton(e){
+console.log(e);
+if (e.propertyName != 'transform') return;
+console.log(e.propertyName)
+console.log(this)
+this.classList.remove('playing');
+}
+
+const keys = document.querySelectorAll('.key');
+    keys.forEach(key=>key.addEventListener('transitionend',removeTransiiton))
 </script>
     </body>
 
